@@ -15,9 +15,10 @@ echo "=> Done!"
 touch /.postgres_pass_modified
 
 echo "========================================================================"
-echo "You can now connect to this PostgreSQL server using:"
+echo "You can now connect to this PostgreSQL Server using:"
 echo ""
-echo "  USERNAME:postgres           PASSWORD:$PASS"
+echo "    psql -h <host> -p <port> --username=postgres"
+echo "and enter the password '$PASS' when prompted"
 echo ""
 echo "Please remember to change the above password as soon as possible!"
 echo "========================================================================"
