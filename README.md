@@ -11,7 +11,7 @@ To create the image `tutum/postgresql`, execute the following command on the tut
 
 	docker build -t tutum/postgresql .
 
-To run the image and bind to port 3306:
+To run the image and bind to port 5432:
 
 	docker run -d -p 5432:5432 tutum/postgresql
 
