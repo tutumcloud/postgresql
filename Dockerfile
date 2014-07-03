@@ -2,6 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER FENG, HONGLIN <hfeng@tutum.co>
 
 #Install PostgreSQL-9.3
+RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-9.3
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y pwgen
 
