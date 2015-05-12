@@ -1,0 +1,6 @@
+postgresql:
+  image: tutum/postgresql
+  ports:
+    - 5432:5432
+  environment:
+    - POSTGRES_PASS="**ChangeMe**"
