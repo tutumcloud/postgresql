@@ -1,6 +1,8 @@
 tutum-docker-postgresql
 =======================
 
+[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
+
 Base docker image to run a PostgreSQL database server
 
 
@@ -15,7 +17,7 @@ To run the image and bind to port 5432:
 
 	docker run -d -p 5432:5432 tutum/postgresql
 
-The first time that you run your container, a new user `postgres` with all privileges 
+The first time that you run your container, a new user `postgres` with all privileges
 will be created in PostgreSQL with a random password. To get the password, check the logs
 of the container by running:
 
@@ -28,7 +30,7 @@ You will see an output like the following:
 
 	    psql -h <host> -p <port> --username=postgres
 	and enter the password 'HHrUZyI6ubWF' when prompted
-	    
+
 	Please remember to change the above password as soon as possible!
 	========================================================================
 
